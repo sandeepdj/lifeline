@@ -12,7 +12,7 @@ import { HomeComponent } from './modules/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+     AppComponent,
     LoginComponent,
     LayoutComponent,
     SidebarComponent,

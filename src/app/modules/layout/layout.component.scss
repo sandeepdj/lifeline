@@ -1,0 +1,132 @@
+$sidebar-width:210px;
+$page-width:calc(100% - #{$sidebar-width});
+
+.ht100{
+  height: calc(100% - 4em);
+}
+.ht{
+  height: 100%;
+}
+.header-wrapper{
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  background: #fff;
+  position: fixed;
+  z-index: 1028;
+  min-height: 4em;
+  padding: 0;
+}
+.left-header{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  min-height: 4em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: $sidebar-width;
+  background-color: #232;
+}
+
+.page-wrap{
+  margin-top: 4em;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-wrap{
+  position: fixed;
+  width:  $sidebar-width;
+  box-shadow: 1px 0px 20px rgba(0,0,0,0.08);
+  height: 100%;
+}
+.container-wrap{
+   background-color: #f4f6f9;
+}
+.fullpage .container-wrap{
+  width:$page-width;
+  margin-left:  $sidebar-width;
+}
+ .container-wrap{
+  position: fixed;
+ }
+.right-header{
+  position: relative;
+    float: left;
+    width:$page-width;
+}
+
+.nav-left{
+  float: left;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.nav-left li{
+  float: left;
+  line-height: 4;
+  padding: 0 10px;
+  position: relative;
+}
+.nav-left li a{
+  color: #000;
+}
+
+.client-name h4{
+  font-weight: bold;
+  padding: 10px;
+}
+
+.profile-notification{
+  -webkit-transform: translateY(30px);
+  background: #fff;
+  -webkit-box-shadow: 0 0 1px 2px rgba(0,0,0,.03), 0 -2px 1px -2px rgba(0,0,0,.02), 0 0 0 -1px rgba(0,0,0,.03);
+  box-shadow: 0 0 1px 2px rgba(0,0,0,.03), 0 -2px 1px -2px rgba(0,0,0,.02), 0 0 0 -1px rgba(0,0,0,.03);
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY(30px);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  visibility: hidden;
+  width: 24rem;
+}
+.profile-header:hover .profile-notification{
+  -webkit-transform: translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+
+}
+
+.profile-notification li{
+  padding: .7em 20px;
+  width: 100%;
+}
+.profile-notification li a{
+  font-size: 15px;
+  padding-left: 0;
+  color: #666;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    padding: 1.5rem .6rem;
+}
+
+.profile-notification li a i{
+  font-size: 15px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+.profile-notification li:hover{
+  background-color: #f1f1f1;
+  transition: all .3s ease-in-out
+}

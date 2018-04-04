@@ -32,8 +32,7 @@ $page-width:calc(100% - #{$sidebar-width});
   text-align: center;
   text-transform: uppercase;
   width: $sidebar-width;
-  background-color: #232;
-}
+ }
 
 .page-wrap{
   margin-top: 4em;
@@ -130,3 +129,8 @@ $page-width:calc(100% - #{$sidebar-width});
   background-color: #f1f1f1;
   transition: all .3s ease-in-out
 }
+
+
+// .hmname{
+//   font-family: 'Lobster Two', cursive;
+// }

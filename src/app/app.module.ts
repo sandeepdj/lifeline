@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { routing } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/login.component';
@@ -20,7 +20,8 @@ import { HomeComponent } from './modules/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
